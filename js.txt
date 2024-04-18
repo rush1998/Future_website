@@ -1,0 +1,1 @@
+JavaScript Print (window.print) - for print page function

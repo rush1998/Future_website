@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Future Tech Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+  <script src="script.js"></script>
+  <div class="wrapper">
+    <header>
+      <!-- Navbar Section -->
+      <nav class="navbar">
+        <div class="navbar__container">
+         <div class="fa"><a href="index.html" id="navbar__logo"><i class="fas fa-gem"></i>FUTURE TECH STORE</a></div> 
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="index.html" class="navbar__links">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="tech.html" class="navbar__links">Products</a>
+            </li>
+            <li class="navbar__item">
+              <a href="cart.html" class="navbar__links active">Cart</a>
+            </li>
+            <li class="navbar__item">
+              <a href="orders.html" class="navbar__links">Orders</a>
+            </li>
+            <li class="navbar__item">
+              <a href="signin.html" class="navbar__links">Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="cart">
+        <div class="cart__container">
+          <h1>Your Shopping Cart</h1>
+          <div class="cart__items">
+            <!-- Sample cart item -->
+            <div class="cart__item">
+              <img src="watch.jpeg" alt="Future Watch">
+              <div class="cart__item-details">
+                <h2>Future Watch</h2>
+                <p>Price: $399.99</p>
+                <p class="quantity">Quantity:</p>
+                <input class="count" type="number" id="quantity" name="quantity" min="0" value="0" onchange="updatePrice()">
+              </div>
+            </div>
+
+            <!-- Sample cart item -->
+            <div class="cart__item">
+              <img src="arglasses.jpeg" alt="Future AR Headset">
+              <div class="cart__item-details">
+                <h2>Future AR Headset</h2>
+                <p>Price: $1999.99</p>
+                <p class="quantity">Quantity:</p>
+                <input class="count" type="number" id="quantity1" name="quantity" min="0" value="0" onchange="updatePrice()">
+              </div>
+            </div>
+          </div>
+
+          <div class="cart__total">
+            <h4 class="price">Total: $XX.XX</h4>
+            <button class="btn-checkout" onclick="redirectToPayment()">Proceed to Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section  -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__logo">
+        <a href="index.html" id="footer__logo"><i class="fas fa-gem"></i>FUTURE TECH</a>
+      </div>
+      <p class="website__rights">© FUTURE TECH 2024. All rights reserved</p>
+    </div>
+  </footer>
+  </div>
+
+</body>
+</html>

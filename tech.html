@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products -Future Tech Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+        crossorigin="anonymous"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    
+    <header>
+      <!-- Navbar Section -->
+      <nav class="navbar">
+        <div class="navbar__container">
+         <div class="fa"><a href="index.html" id="navbar__logo"><i class="fas fa-gem"></i>FUTURE TECH STORE</a></div> 
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="index.html" class="navbar__links">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="tech.html" class="navbar__links active">Products</a>
+            </li>
+            <li class="navbar__item">
+              <a href="cart.html" class="navbar__links">Cart</a>
+            </li>
+            <li class="navbar__item">
+              <a href="orders.html" class="navbar__links">Orders</a>
+            </li>
+            <li class="navbar__item">
+              <a href="signin.html" class="navbar__links">Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="main">
+      <div class="product-container">
+        <div class="product-box">
+          <div class="product-image"><img src="watch.jpeg" class="product-image"></div>
+          <div class="product-title">Product Title</div>
+          <div class="product-description">Future Watch</div>
+          <div class="product-price">$399.99</div>
+          <div class="quantity-controls">
+            <button class="quantity-control" id="decreaseButton-0" onclick="addToCartDecrease(this)" disabled>-</button>
+            <span class="quantity" id="quantity-0" onclick="addToCart(this)">Add to Cart</span>
+            <button class="quantity-control" id="increaseButton-0" onclick="addToCartIncrease(this)" disabled>+</button>
+          </div>
+          <!--<button class="buy-button" id="Add-to-cart">Add to Cart</button> -->
+        </div>
+        <div class="product-box">
+          <div class="product-image"><img src="arglasses.jpeg" class="product-image"></div>
+          <div class="product-title">Product Title</div>
+          <div class="product-description">Fututre AR Headset</div>
+          <div class="product-price">$1999.99</div>
+          <div class="quantity-controls">
+            <button class="quantity-control" id="decreaseButton-1" onclick="addToCartDecrease(this)" disabled>-</button>
+            <span class="quantity" id="quantity-1" onclick="addToCart(this)">Add to Cart</span>
+            <button class="quantity-control" id="increaseButton-1" onclick="addToCartIncrease(this)" disabled>+</button>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="product-image"><img src="pic5.jpg" class="product-image"></div>
+          <div class="product-title">Product Title</div>
+          <div class="product-description">VR Gaming Chair</div>
+          <div class="product-price">$3999.99</div>
+          <div class="quantity-controls">
+            <button class="quantity-control" id="decreaseButton-2" onclick="addToCartDecrease(this)" disabled>-</button>
+            <span class="quantity" id="quantity-2" onclick="addToCart(this)">Add to Cart</span>
+            <button class="quantity-control" id="increaseButton-2" onclick="addToCartIncrease(this)" disabled>+</button>
+          </div>
+        </div>
+        <div class="product-box">
+          <div class="product-image"><img src="lens.jpeg" class="product-image"></div>
+          <div class="product-title">Product Title</div>
+          <div class="product-description">Future AR Lens</div>
+          <div class="product-price">$1599.99</div>
+          <div class="quantity-controls">
+            <button class="quantity-control" id="decreaseButton-3" onclick="addToCartDecrease(this)" disabled>-</button>
+            <span class="quantity" id="quantity-3" onclick="addToCart(this)">Add to Cart</span>
+            <button class="quantity-control" id="increaseButton-3" onclick="addToCartIncrease(this)" disabled>+</button>
+          </div>
+      </div>
+      </div>
+      </div>
+    </div>
+    </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__logo">
+        <a href="index.html" id="footer__logo"><i class="fas fa-gem"></i>FUTURE TECH</a>
+      </div>
+      <p class="website__rights">© FUTURE TECH 2024. All rights reserved</p>
+    </div>
+  </footer>
+</body>
+</html>
+

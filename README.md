@@ -1,4 +1,4 @@
 # Future_website
-My first website.
+My E-commerce website.
 <br>
 Author: Rushabh Patel
