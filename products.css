@@ -309,6 +309,15 @@
     margin-top: 1rem;
 
   }
+
+  .vrimage{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    left: 150px;
+    bottom: 412px;    
+  }
+
   
   .product-details {
    
@@ -319,6 +328,8 @@
   }
   
   .add-to-cart-btn {
+    position: relative;
+    bottom: 270px;
     background-color: #f77062;
     color: white;
     border: none;
@@ -349,7 +360,8 @@
       margin-top: 20px;
       margin-bottom: 20px;
     }
-  
+
+ 
     .product-details {
       background-color: #131313;
       color: #ffffff;
