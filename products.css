@@ -327,6 +327,32 @@
     text-align: center;
   }
   
+  .poduct-vr-headset{
+    position: relative;
+    left: 360px;
+    bottom: 420px;
+    background-color: #131313;
+    color: #ffffff;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .product-vr-headset-button{
+    position: relative;
+    bottom: 414px;
+    left: 455px;
+    background-color: #f77062;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .product-vr-headset-button:hover{
+    background-color: #4837ff;
+  }
+
   .add-to-cart-btn {
     position: relative;
     bottom: 270px;
