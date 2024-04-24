@@ -44,26 +44,28 @@
       </div>
     </nav>
     <div class="main">
-      <div class="main__container">
-        <div class="main__content">
+    <div class="main__container">
+      <div class="main__content">
           <h1>PRODUCT SECTION</h1>
           <p>Check out our technologies</p>
         <!--<button class="main__btn"><a href="#">Get Started</a></button>-->
-        </div>
-        <div class="product_selection">
-        <img id="tech_img" src="pic5.jpg" />
+      </div> 
+      <div class="product_selection">
+        <img id="tech_img" src="pic5.jpg"/>
         <h2 class="product-details">VR Gaming Chair</h2>
         <p class="product-details">VR gaming chairs offer an immersive gaming experience, making users feel like they're inside the game.</p>
         <h4 class="product-details">Price: $3,499.00</h4>
-        <a href="cart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
+        <button class="add-to-cart-btn" onclick="addToCart('chair')">Add to Cart</button>
+      <span id="cartCounter-chair" style="color: aliceblue;" >0</span> <!-- Counter for Chair -->
        <!--Second Product-->
         <img class="vrimage" src="pic3.jpg" alt="Gaming VR"/>
         <h2 class="poduct-vr-headset">VR headset</h2>
         <p class="poduct-vr-headset">A VR headset is a device used for immersive virtual reality experiences. It typically consists of a head-mounted display, sensors, and trackers that allow the user to interact with a virtual environment.</p>
         <h4 class="poduct-vr-headset" >Price: $300.00</h4>
-        <a href="cart.html"><button class="product-vr-headset-button">Add to Cart</button></a>
-        </div>
+        <button class="product-vr-headset-button" onclick="addToCart('headset')">Add to Cart</button>
+      <span id="cartCounter-headset" style="color: aliceblue;">0</span> <!-- Counter for Headset -->
       </div>
+    </div>
     </div>
     
     <!-- Services Section -->

@@ -7,3 +7,9 @@ menu.addEventListener('click', function() {
 
 });
 
+function addToCart(product) {
+  let counterElement = document.getElementById(`cartCounter-${product}`);
+  let count = parseInt(counterElement.textContent);
+  count++;
+  counterElement.textContent = count;
+}

@@ -314,7 +314,7 @@
     position: relative;
     height: 300px;
     width: 300px;
-    left: 150px;
+    left: 200px;
     bottom: 412px;    
   }
 
@@ -368,6 +368,12 @@
   
   .add-to-cart-btn:hover {
     background-color: #4837ff;
+  }
+
+  #cartCounter-chair{
+    position: absolute;
+    top:525px;
+    right: 510px;
   }
 
   @media screen and (max-width: 960px) {
