@@ -223,6 +223,8 @@
   }
   
   .main__content h1 {
+    position: relative;
+    bottom: 350px;
     font-size: 4rem;
     background-color: #ff8177;
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
@@ -246,6 +248,8 @@
   }
   
   .main__content p {
+    position: relative;
+    bottom: 370px;
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
