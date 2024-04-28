@@ -30,3 +30,5 @@ function updatePrice() {
   function redirectToPayment() {
     window.location.href = "payments.html";
   }
+
+  // 
