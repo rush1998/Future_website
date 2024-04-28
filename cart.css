@@ -218,8 +218,8 @@
 }
 
 #tech_img{
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
 }
 
 .description{
@@ -236,8 +236,7 @@
 .price {
   color: #fff;
   position: relative; 
-  bottom: 320px; 
-  left: 520px;
+  top: 10px;
   font-size: 25px; 
   font-weight: bold; 
   background: linear-gradient(-20deg, #b721ff, #21d4fd);
@@ -252,8 +251,7 @@
   font-size: 16px; 
   font-weight: bold; 
   position: absolute; 
-  bottom: 485px; 
-  left: 690px;
+  top: 380px;
 
 }
 
@@ -262,9 +260,10 @@
   font-size: 16px; 
   font-weight: bold; 
   position: relative; 
-  bottom: 320px; 
-  left: 520px;
+  top: 10px;
+  left: 80px; 
 }
+
 .go_to_payment{
   background-color: #f77062;
     color: white;
@@ -273,8 +272,8 @@
     border-radius: 5px;
     cursor: pointer;
     position: relative; 
-  bottom: 321px; 
-  left: 520px;
+    left: 80px;
+    top: 10px;
 }
 
 .go_to_payment:hover {
