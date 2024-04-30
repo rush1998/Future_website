@@ -231,6 +231,7 @@
 
 .bold-word{
   font-weight: bold;
+  word-wrap: break-word;
 }
 
 .price {
