@@ -19,7 +19,7 @@ function updatePrice() {
   
     // Calculate total price based on quantity
     const totalPrice = parseFloat(price * quantityInput.value).toFixed(2);
-  
+
     // Update price element with new total price
     priceElement.textContent = `Price: $${totalPrice}`;
   }
@@ -31,4 +31,4 @@ function updatePrice() {
     window.location.href = "payments.html";
   }
 
-  // 
+ 
