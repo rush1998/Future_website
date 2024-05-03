@@ -45,24 +45,26 @@
     </nav>
     <div class="main">
       <p class="shoping_cart">Shoping Cart</p>
-      <img id="tech_img" src="pic5.jpg" />
-      <h1 class="p_name">VR Gaming Chair</h1>
-      <p class="description"><span class="bold-word">Description:</span> VR gaming chairs offer an immersive gaming <br>experience,
-        making users feel like they're inside the game.</p>
-      <p class="quantity">Quantity:</p>
-      <input class="count" type="number" id="quantity" name="quantity" min="1" value="1">
-      <button class="go_to_payment" onclick="redirectToPayment()">Go to Payment</button>
-      <h4 class="price">Price: $3,499.00</h4>  
-      <div id="second-product">
-      <img id="tech_img" src="pic3.jpg" />
+      <!-- First Product   -->
+      <div id="first-product">
+        <img id="tech_img" src="pic5.jpg" />
+        <h1 class="p_name">VR Gaming Chair</h1>
+        <p class="description"><span class="bold-word">Description:</span> VR gaming chairs offer an immersive gaming <br>experience, making users feel like they're inside the game.</p>
+        <p class="quantity">Quantity:</p>
+        <input class="count" type="number" id="quantity1" name="quantity" min="1" value="1" onchange="updatePrice(1)">
+        <button class="go_to_payment" onclick="redirectToPayment()">Go to Payment</button>
+        <h4 class="price" id="price1">Price: $3,499.00</h4>
+      </div>
       <!-- Second Product -->
-      <h1 class="p_name">VR headset</h1>
-      <p class="description"><span class="bold-word">Description:</span> A VR headset is a device used for immersive virtual reality <br>experiences. It typically consists of a head-mounted display, sensors, and <br> trackers that allow the user to interact with a virtual environment.</p>
-      <p class="quantity-second">Quantity:</p>
-      <input class="count-second" type="number" id="quantity" name="quantity" min="1" value="1">
-      <button class="payment-second" onclick="redirectToPayment()">Go to Payment</button>
-      <h4 class="price">Price: $300.00</h4>
-    </div> 
+      <div id="second-product">
+        <img id="tech_img" src="pic3.jpg" />
+        <h1 class="p_name">VR headset</h1>
+        <p class="description"><span class="bold-word">Description:</span> A VR headset is a device used for immersive virtual reality <br>experiences. It typically consists of a head-mounted display, sensors, and <br> trackers that allow the user to interact with a virtual environment.</p>
+        <p class="quantity-second">Quantity:</p>
+        <input class="count-second" type="number" id="quantity2" name="quantity" min="1" value="1" onchange="updatePrice(2)">
+        <button class="payment-second" onclick="redirectToPayment()">Go to Payment</button>
+        <h4 class="price" id="price2">Price: $300.00</h4>
+      </div>
     </div>
     <!-- Services Section -->
     <div class="footer__container">

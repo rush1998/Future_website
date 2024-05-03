@@ -6,29 +6,17 @@ menu.addEventListener('click', function() {
   menuLinks.classList.toggle('active');
 });
 
-// Function to update price based on quantity
-function updatePrice() {
-    // Get quantity input element
-    const quantityInput = document.getElementById('quantity');
-  
-    // Get price element
-    const priceElement = document.querySelector('.price');
-  
-    // Get price value
-    const price = 3499.00; // You can dynamically fetch price from your data
-  
-    // Calculate total price based on quantity
-    const totalPrice = parseFloat(price * quantityInput.value).toFixed(2);
+function updatePrice(productNumber) {
+  const quantityInput = document.getElementById(`quantity${productNumber}`);
+  const priceElement = document.getElementById(`price${productNumber}`);
+  const pricePerItem = productNumber === 1 ? 3499.00 : 300.00; // Set price per item for each product
 
-    // Update price element with new total price
-    priceElement.textContent = `Price: $${totalPrice}`;
-  }
-  
-  // Add event listener to quantity input
-  document.getElementById('quantity').addEventListener('input', updatePrice);
-  
-  function redirectToPayment() {
-    window.location.href = "payments.html";
+  let quantity = parseInt(quantityInput.value);
+  if (isNaN(quantity) || quantity < 1) {
+    quantity = 1;
+    quantityInput.value = quantity;
   }
 
- 
+  const totalPrice = quantity * pricePerItem;
+  priceElement.textContent = `Price: $${totalPrice.toFixed(2)}`;
+}
